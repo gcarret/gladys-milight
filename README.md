@@ -1,6 +1,8 @@
 Gladys Milight
 =======================
 
+WARNING : this is a WIP to add v6 compatibility. (upgrade to node-milight-promise v0.2.3)
+
 This module allows you to control your milight lamps in Gladys.
 
 ### Installation
