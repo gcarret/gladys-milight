@@ -1,7 +1,16 @@
+WARNING : this is a WIP to add v6 compatibility. (upgrade to node-milight-promise v0.2.3)
+
+What works for now :
+- Detection of all kinds of bridges : Depending on its version, the bridge will have an identifier "IP:v6" or "IP:legacy" in Gladys.
+- Basic control of RGBWW lamps ( on/off, brightness and hue)
+- Basic control of Bridge Leds (if any). Create a Device with "BRIDGE_ID:bridge" as identifier to control it, with the same DeviceTypes as for lamps
+
+
+
 Gladys Milight
 =======================
 
-WARNING : this is a WIP to add v6 compatibility. (upgrade to node-milight-promise v0.2.3)
+
 
 This module allows you to control your milight lamps in Gladys.
 
