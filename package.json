@@ -1,6 +1,6 @@
 {
   "name": "gladys-milight",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This module enable Milight lamp control in Gladys",
   "keywords": [
     "milight",
@@ -8,8 +8,8 @@
     "gladys"
   ],
   "dependencies": {
-    "node-milight-promise": "^0.2.3"
+    "node-milight-promise": "^0.2.0"
   },
-  "author": "Pierre-Gilles Leymarie",
+  "author": "Pierre-Gilles Leymarie, Guillaume Carret",
   "license": "CC-BY-NC-SA-3.0"
 }
