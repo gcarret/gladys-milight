@@ -1,9 +1,19 @@
 WARNING : this is a WIP to add v6 compatibility. (upgrade to node-milight-promise v0.2.3)
 
-What works for now :
-- Detection of all kinds of bridges : Depending on its version, the bridge will have an identifier "IP:v6" or "IP:legacy" in Gladys.
-- Basic control of RGBWW lamps ( on/off, brightness and hue)
-- Basic control of Bridge Leds (if any). Create a Device with "BRIDGE_ID:bridge" as identifier to control it, with the same DeviceTypes as for lamps
+What works for now (18/08/2017) :
+- Detection of all kinds of bridges : Depending on its version, the bridge will have an identifier "IP_ADDRESS:v6" or "IP_ADDRESS:legacy" in Gladys.
+- Full control of RGBW and RGB-CCT lamps on V6 bridge ( on/off, brightness, saturation and hue, whiteMode and nightMode).
+To allow this control you need to add for your device the following deviceTypes (see the picture for the available ranges):
+
+binary
+brightness
+saturation
+hue
+whitemode
+nightmode
+
+  
+- Full control of Bridge Leds (if any). Create a Device with "BRIDGE_ID:bridge" as identifier to control it, with the same DeviceTypes as for lamps (except saturation, which can't be controlled).
 
 
 
@@ -27,4 +37,4 @@ identifier: `BRIDGE_ID_IN_GLADYS:MILIGHT_ZONE`, protocol: `rf`, service: `miligh
 Here is an example of a lamp in Zone 1 with bridge ID 12 : {identifier: `12:1`}
 - Create foreach device these three deviceTypes :
 
-![Gladys milight](https://developer.gladysproject.com/assets/images/documentation/milight/gladys-milight.jpg)
+![Gladys milight](http://kusi.fr/uploads/devicetypes-milight.PNG)
